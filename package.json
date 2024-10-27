@@ -1,6 +1,6 @@
 {
   "name": "playwright-typescipt-playwright-test",
-  "version": "1.29.0-next",
+  "version": "1.48.0",
   "description": "Playwright Framework with Typescript",
   "main": "index.js",
   "scripts": {
@@ -13,9 +13,8 @@
     "test:record": "npx playwright codegen",
     "test:visual": "npx playwright test visualComparision.test.ts --project=Chrome",
     "test:device": "npx playwright test Emulation.test.ts --project=Device",
-    "allureReport": "allure serve",
-    "lighthouse": "node Lighthouse.js"
-  },
+    "allureReport": "allure serve"
+    },
   "repository": {
     "type": "git",
     "url": "https://github.com//playwright-typescipt-playwright-test.git"
@@ -23,24 +22,26 @@
   "author": "Sampath K V",
   "license": "ISC",
   "dependencies": {
-    "@types/adm-zip": "^0.5.0",
-    "@types/crypto-js": "^4.1.1",
-    "@typescript-eslint/eslint-plugin": "^5.42.0",
-    "@typescript-eslint/parser": "^5.42.0",
-    "adm-zip": "^0.5.9",
+    "@cucumber/cucumber": "^10.9.0",
+    "@playwright/test": "^1.48.0",
+    "@types/adm-zip": "^0.5.5",
+    "@types/crypto-js": "^4.2.2",
+    "adm-zip": "^0.5.16",
+    "allure-commandline": "2.31.0",
+    "allure-playwright": "^3.0.5",
     "cross-env": "^7.0.3",
-    "crypto-js": "^4.1.1",
-    "eslint": "^8.26.0",
-    "eslint-plugin-import": "^2.26.0",
-    "exceljs": "^4.3.0",
-    "experimental-allure-playwright": "0.0.3",
-    "lighthouse": "^9.6.8",
+    "crypto-js": "^4.2.0",
+    "exceljs": "^4.4.0",
     "pg": "^8.8.0",
-    "typescript": "^4.8.4",
-    "winston": "^3.8.2"
+    "puppeteer-core": "^22.11.1",
+    "typescript": "^5.6.3",
+    "winston": "^3.15.0"
   },
   "devDependencies": {
-    "@playwright/test": "^1.28.1",
-    "allure-playwright": "^2.0.0-beta.20"
+    "allure-playwright": "^2.0.0-beta.20",
+    "npm-force-resolutions": "^0.0.10"
+  },
+  "resolutions": {
+    "ws": "8.12.0"
   }
 }

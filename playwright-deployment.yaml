@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: playwright-typescript-autoframework
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: playwright-typescript-autoframework
+  template:
+    metadata:
+      labels:
+        app: playwright-typescript-autoframework
+    spec:
+      containers:
+      - name: playwright-framework
+        image: kvsampathvg/playwright-typescript-autoframework:latest
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 8080
