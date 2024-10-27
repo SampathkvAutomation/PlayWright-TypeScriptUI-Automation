@@ -15,7 +15,9 @@ const config: PlaywrightTestConfig = {
         baseURL: "https://ecommerce-playground.lambdatest.io/",
         headless: false,
         screenshot: "only-on-failure",     
-        video:"retain-on-failure"        
+        video:"retain-on-failure"   ,
+        actionTimeout: 10000,
+     
     },
     retries: 0,
     
