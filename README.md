@@ -11,22 +11,20 @@ Mobile App Automation for Android and iOS using Appium​
 The framework is built with Node.js and TypeScript, promoting modularity, scalability, and ease of maintenance.​
 
 📁 Project Structure
-bash
-Copy
-Edit
-├── allure-report/           # Allure HTML reports
-├── allure-results/          # Allure raw result files
-├── e2e/                     # End-to-end test scripts
-├── html-report/             # Playwright HTML reports
-├── pages/                   # Page Object Models
-├── tests-examples/          # Sample test cases
-├── tests/                   # Main test suites
-├── utils/                   # Utility functions and helpers
-├── test-1.spec.ts           # Sample test specification
-├── playwright.config.ts     # Playwright configuration
-├── package.json             # Project dependencies and scripts
-├── tsconfig.json            # TypeScript configuration
-└── .prettierrc              # Prettier configuration
+
+├── allure-report/         
+├── allure-results/         
+├── e2e/                   
+├── html-report/             
+├── pages/                   
+├── tests-examples/          
+├── tests/                 
+├── utils/                  
+├── test-1.spec.ts           
+├── playwright.config.ts    
+├── package.json            
+├── tsconfig.json           
+└── .prettierrc             
 🚀 Features
 Unified Testing Framework: Combine web, mobile, and API tests in a single project.
 
